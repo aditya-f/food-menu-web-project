@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resto-ku</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="font-size: 60px">Resto-ku</h1>
+      <h2 style="font-size: 30px">Menu Restoran Sederhana</h2>
+      <hr />
+    </header>
+    <main>
+      <h2>Hai, <span id="name"></span>! Silakan pilih makanannya.</h2>
+      <div class="menu">
+        <img
+          src="https://image.shutterstock.com/z/stock-photo-grilled-steak-on-bone-with-knife-and-fork-carving-set-on-black-stone-slate-sliced-grilled-steak-on-531074218.jpg"
+          alt="steak"
+        />
+        <p>Steak Sapi</p>
+        <p id="ss-p">Rp. 75000</p>
+        <button class="button add ss">Tambah</button>
+        <button class="button delete ss">Hapus</button>
+      </div>
+      <div class="menu">
+        <img
+          src="https://image.shutterstock.com/z/stock-photo-chicken-salad-with-leaf-vegetables-chard-eggs-bulgur-and-cherry-tomatoes-428121295.jpg"
+          alt="salad ayam"
+        />
+        <p>Salad Ayam</p>
+        <p id="sa-p">Rp. 25000</p>
+        <button class="button add sa">Tambah</button>
+        <button class="button delete sa">Hapus</button>
+      </div>
+      <div class="menu">
+        <img
+          src="https://image.shutterstock.com/z/stock-photo-grilled-chicken-fillets-on-slate-plate-gray-concrete-background-448234768.jpg"
+          alt="gambar ayam"
+        />
+        <p>Ayam Panggang</p>
+        <p id="ap-p">Rp. 25000</p>
+        <button class="button add ap">Tambah</button>
+        <button class="button delete ap">Hapus</button>
+      </div>
+      <div class="menu">
+        <img
+          src="https://image.shutterstock.com/z/stock-photo-homemade-banana-bread-with-walnut-and-cinnamon-on-a-stone-background-1145602145.jpg"
+          alt="roti"
+        />
+        <p>Banana Bread</p>
+        <p id="bb-p">Rp. 20000</p>
+        <button class="button add bb">Tambah</button>
+        <button class="button delete bb">Hapus</button>
+      </div>
+      <div class="cart">
+        <h2>Pesanan</h2>
+        <table>
+          <tr>
+            <th>Makanan</th>
+            <th>Jumlah</th>
+            <th>Harga</th>
+          </tr>
+          <tr>
+            <td>Steak Sapi</td>
+            <td id="ss">0</td>
+            <td id="ss-h">0</td>
+          </tr>
+          <tr>
+            <td>Salad Ayam</td>
+            <td id="sa">0</td>
+            <td id="sa-h">0</td>
+          </tr>
+          <tr>
+            <td>Ayam Panggang</td>
+            <td id="ap">0</td>
+            <td id="ap-h">0</td>
+          </tr>
+          <tr>
+            <td>Banana Bread</td>
+            <td id="bb">0</td>
+            <td id="bb-h">0</td>
+          </tr>
+        </table>
+        <h3>Total Harga Pesanan: Rp. <span id="total">0</span></h3>
+        <button id="order" class="button">Pesan Sekarang</button>
+        <br>
+        <br>
+        <button id="empty" class="button">Kosongkan Pesanan</button>
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <p><a href="#">Buka di browser external</a></p>
+    </footer>
+    <script src="cart.js"></script>
+  </body>
+</html>
